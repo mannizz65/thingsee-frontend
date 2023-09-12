@@ -104,33 +104,65 @@ function Home() {
         <div className='main-cards'>
             <div className='card'>
                 <div className='card-inner'>
-                    <h3>PRODUCTS</h3>
+                    <h3>Carbon Dioxide</h3>
                     <BsFillArchiveFill className='card_icon'/>
                 </div>
                 <h1>3000</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
-                    <h3>CATEGORIES</h3>
+                    <h3>Air Pressure</h3>
                     <BsFillGrid3X3GapFill className='card_icon'/>
                 </div>
                 <h1>120</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
-                    <h3>CUSTOMERS</h3>
+                    <h3>CO2 Levels</h3>
                     <BsPeopleFill className='card_icon'/>
                 </div>
                 <h1>330</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
-                    <h3>ALERTS</h3>
+                    <h3>Temperature</h3>
                     <BsFillBellFill className='card_icon'/>
                 </div>
                 <h1>4</h1>
             </div>
         </div>
+        <div className='main-cards'>
+            <div className='card'>
+                <div className='card-inner'>
+                    <h3>TVOC LEVEL</h3>
+                    <BsFillArchiveFill className='card_icon'/>
+                </div>
+                <h1>3000</h1>
+            </div>
+            <div className='card'>
+                <div className='card-inner'>
+                    <h3>Barometric Pressure Pressure</h3>
+                    <BsFillGrid3X3GapFill className='card_icon'/>
+                </div>
+                <h1>120</h1>
+            </div>
+            <div className='card'>
+                <div className='card-inner'>
+                    <h3>Humidity</h3>
+                    <BsPeopleFill className='card_icon'/>
+                </div>
+                <h1>330</h1>
+            </div>
+            <div className='card'>
+                <div className='card-inner'>
+                    <h3>Temperature</h3>
+                    <BsFillBellFill className='card_icon'/>
+                </div>
+                <h1>4</h1>
+            </div>
+        </div>
+
+ 
 
         <div className='charts'>
         <ResponsiveContainer width="100%" height="100%">

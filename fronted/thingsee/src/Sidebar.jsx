@@ -15,41 +15,23 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
         </div>
 
         <ul className='sidebar-list'>
-            <li className='sidebar-list-item'>
-                <a href="">
-                    <BsGrid1X2Fill className='icon'/> Dashboard
-                </a>
-            </li>
-            <li className='sidebar-list-item'>
-                <a href="">
-                    <BsFillArchiveFill className='icon'/> Products
-                </a>
-            </li>
-            <li className='sidebar-list-item'>
-                <a href="">
-                    <BsFillGrid3X3GapFill className='icon'/> Categories
-                </a>
-            </li>
-            <li className='sidebar-list-item'>
-                <a href="">
-                    <BsPeopleFill className='icon'/> Customers
-                </a>
-            </li>
-            <li className='sidebar-list-item'>
-                <a href="">
-                    <BsListCheck className='icon'/> Inventory
-                </a>
-            </li>
-            <li className='sidebar-list-item'>
-                <a href="">
-                    <BsMenuButtonWideFill className='icon'/> Reports
-                </a>
-            </li>
-            <li className='sidebar-list-item'>
-                <a href="">
-                    <BsFillGearFill className='icon'/> Setting
-                </a>
-            </li>
+        <div className='card'>
+                <div className='card-inner'>
+                    <h3>Air Quality Index</h3>
+                    <BsFillGrid3X3GapFill className='card_icon'/>
+                </div>
+                <h1>120</h1>
+            </div>
+
+            
+    
+            <div className='card'>
+                <div className='card-inner'>
+                    <h3>Air Pressure</h3>
+                    <BsFillGrid3X3GapFill className='card_icon'/>
+                </div>
+                <h1>120</h1>
+            </div>
         </ul>
     </aside>
   )
