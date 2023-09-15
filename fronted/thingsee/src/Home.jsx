@@ -139,12 +139,13 @@ function Home() {
                 </div>
                 <h1>3000</h1>
             </div>
+           
             <div className='card'>
                 <div className='card-inner'>
-                    <h3>Barometric Pressure Pressure</h3>
-                    <BsFillGrid3X3GapFill className='card_icon'/>
+                    <h3>Barometric Pressure</h3>
+                    <BsPeopleFill className='card_icon'/>
                 </div>
-                <h1>120</h1>
+                <h1>330</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
@@ -163,6 +164,19 @@ function Home() {
         </div>
 
  
+        <div class="containerr">
+    <div class="cardd">
+        <h3>Air Quality Index</h3>
+        <BsFillGrid3X3GapFill />
+        <h1>120</h1>
+    </div>
+    <div class="cardd">
+        <h3>Air Quality Index</h3>
+        <BsFillGrid3X3GapFill />
+        <h1>120</h1>
+    </div>
+</div>
+
 
         <div className='charts'>
         <ResponsiveContainer width="100%" height="100%">

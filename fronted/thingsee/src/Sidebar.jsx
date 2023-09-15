@@ -15,13 +15,15 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
         </div>
 
         <ul className='sidebar-list'>
+
+
         <div className='card'>
                 <div className='card-inner'>
                     <h3>Air Quality Index</h3>
                     <BsFillGrid3X3GapFill className='card_icon'/>
                 </div>
                 <h1>120</h1>
-            </div>
+        </div>
 
             
     
