@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.containerError {
+	max-width: 1000px;
+	margin: auto;
+	color: red;
+}
+.card-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .card {
+	width: calc(20% - 20px); /* Adjust the width as needed */
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  .card img {
+	max-width: 50%;
+	height: 50px; 
+	margin: 0 auto;
+  }
+
+  /* CSS styles for the div with class "weather-container" */
+.weather-container {
+    background-color: #3498db; /* Background color for the div */
+    color: #fff; /* Text color for the div */
+    padding: 20px; /* Padding around the div */
+    text-align: center; /* Center-align the content within the div */
+}
+
+.weather-container h1 {
+    font-size: 36px; /* Font size for the title */
+    margin: 0; /* Remove margin around the title */
+}
+
+  
+  /* Add more styling as needed */
+  
