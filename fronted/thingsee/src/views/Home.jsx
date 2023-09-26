@@ -16,6 +16,10 @@ import logo12 from "../../src/assets/ho.png";
 
 export default function componentName() {
   const [sensorData, setSensorData] = useState(null);
+  const [weatherData, setWeatherData] = useState(null);
+  const [time, setTime] = useState(new Date());
+
+
 
   // Make an API request to fetch the data
   useEffect(() => {
@@ -29,7 +33,42 @@ export default function componentName() {
       .catch((error) => {
         console.error('Error fetching data:', error);
       });
-  }, []);
+
+      
+
+ // Fetch weather data
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat=65.0124&lon=25.4682&appid=174edfc6e5ad092f016282b294e8dfea')
+      .then((response) => response.json())
+      .then((data) => {
+        // Set the fetched weather data in the state variable
+        setWeatherData(data);
+        console.error('Weather data:', data);
+      })
+      .catch((error) => {
+        console.error('Error fetching weather data:', error);
+      });
+
+
+
+      const intervalID = setInterval(() => {
+        // Update the time every second
+        setTime(new Date());
+      }, 1000);
+  
+      // Cleanup the interval when the component unmounts
+      return () => clearInterval(intervalID);
+
+
+
+
+
+  }, []);  // Empty dependency array means this effect runs once when the component mounts
+
+
+  const hours = time.getHours();
+  const minutes = time.getMinutes();
+  const seconds = time.getSeconds();
+
   return (
     <>
       <section className="text-gray-700 body-font">
@@ -67,7 +106,7 @@ export default function componentName() {
           <div class="card">
             <img src={logo5} alt="Image 2"></img>
             <h3>Barometric Pressure</h3>
-            <h5>{sensorData.humd}</h5>
+            <h5>00</h5>
             <Link to="/barometric">View</Link>
           </div>
           <div class="card">
@@ -115,13 +154,13 @@ export default function componentName() {
             <img src={logo11} alt="Image 2"></img>
             <h3>Historical In</h3>
             <h5>{sensorData.historicalIn}</h5>
-            <Link to="/barometric">View</Link>
+            <Link to="/historicalIn">View</Link>
           </div>
           <div class="card">
             <img src={logo12} alt="Image 2"></img>
             <h3>Historical Out</h3>
             <h5>{sensorData.historicalOut}</h5>
-            <Link to="/tvoclevel">View</Link>
+            <Link to="/historicalOut">View</Link>
           </div>
         </div>
         ) : (
@@ -132,15 +171,15 @@ export default function componentName() {
 		<div class="weather-container"> 
         <h1>Outdoor Weather</h1>
     </div>
-    {sensorData ? (
+    {weatherData ? (
         <div class="card-row">
         
            <div class="card">
           
-           <h3>Air Quality</h3>
-           <h5>{sensorData.airp}</h5>
+           <h3>Feels Like</h3>
+           <h5>{weatherData.main.feels_like}</h5>
 
-           <Link to="/airquality">View</Link>
+          
          </div>
             
           
@@ -148,26 +187,44 @@ export default function componentName() {
           <div class="card">
            
             <h3>Temperature</h3>
-            <h5>{sensorData.temp}</h5>
-            <Link to="/temperature">View</Link>
+            <h5>{weatherData.main.temp}</h5>
+            
           </div>
          
           <div class="card">
             
             <h3>Wind Speed</h3>
-            <h5>{sensorData.humd}</h5>
-            <Link to="/barometric">View</Link>
+            <h5>{weatherData.wind.speed}</h5>
+          
           </div>
           <div class="card">
            
             <h3>Humidity</h3>
-            <h5>{sensorData.tvoc}</h5>
-            <Link to="/tvoclevel">View</Link>
+            <h5>{weatherData.main.humidity}</h5>
+           
           </div>
+          <div class="card">
+           
+           <h3>Weather</h3>
+           <h5>{weatherData.weather[0].description}</h5>
+          
+         </div>
         </div>
         ) : (
           <p>Loading...</p>
         )}
+
+
+<div className="clock-container">
+      <div className="clock-card">
+        <h1>Current Time:</h1>
+        <p className="clock-time">
+          {String(hours).padStart(2, '0')}:
+          {String(minutes).padStart(2, '0')}:
+          {String(seconds).padStart(2, '0')}
+        </p>
+      </div>
+    </div>
 
 
 		

@@ -49,6 +49,28 @@ code {
     margin: 0; /* Remove margin around the title */
 }
 
+
+.clock-container {
+	display: flex;
+	justify-content: center;
+	
+
+  }
+  
+  .clock-card {
+	background-color: #f0f0f0;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+  }
+  
+  .clock-time {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 10px 0;
+  }
+  
   
   /* Add more styling as needed */
   

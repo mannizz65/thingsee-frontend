@@ -14,26 +14,26 @@ import {
   Bar,
 } from 'recharts';
 
-export class TotalOut extends PureComponent {
-  state = {
-    data: [], // Initialize with an empty array
-  };
-
-  componentDidMount() {
+export class HistoricalOut extends PureComponent {
+    state = {
+        data: [], // Initialize with an empty array
+      };
     
-    axios.get('http://localhost:4000/thingseeSensor/')
-      .then((response) => {
-        const data = response.data.result;
-        this.setState({ data });
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
-  }
+      componentDidMount() {
+        
+        axios.get('http://localhost:4000/thingseeSensor/')
+          .then((response) => {
+            const data = response.data.result;
+            this.setState({ data });
+          })
+          .catch((error) => {
+            console.error('Error fetching data:', error);
+          });
+      }
   render() {
     return (
-      <div>
-        <h2>TotalOut</h2>
+        <div>
+        <h2>Total In</h2>
 
         <ResponsiveContainer width="90%" height={400}>
           <LineChart data={this.state.data}>
@@ -42,7 +42,7 @@ export class TotalOut extends PureComponent {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Line dataKey="totalOut" stroke="#82ca9d" name="TotalOut" />
+            <Line dataKey="historicalOut" stroke="#82ca9d" name="Total In" />
           </LineChart>
         </ResponsiveContainer>
 
@@ -56,7 +56,7 @@ export class TotalOut extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="totalOut" fill="#8884d8" />
+          <Bar dataKey="historicalOut" fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
     </div>
@@ -64,4 +64,4 @@ export class TotalOut extends PureComponent {
   }
 }
 
-export default TotalOut
+export default HistoricalOut

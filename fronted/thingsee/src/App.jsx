@@ -13,6 +13,9 @@ import In from "./views/In";
 import TotalIn from "./views/TotalIn";
 import Out from "./views/Out";
 import TotalOut from "./views/TotalOut";
+import HistoricalIn from "./views/HistoricalIn";
+import HistoricalOut from "./views/HistoricalOut";
+
 import Nav from "./components/Nav";
 
 function App() {
@@ -33,6 +36,8 @@ function App() {
 					<TotalIn path="/totalin"/>
 					<TotalOut path="/totalout"/>
 					<Carbon path="/carbon"/>
+					<HistoricalIn path="/historicalIn"/>
+					<HistoricalOut path="/historicalOut"/>
 
 				</Router>
 			</div>
