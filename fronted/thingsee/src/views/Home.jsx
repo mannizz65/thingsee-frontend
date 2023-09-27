@@ -23,7 +23,7 @@ export default function componentName() {
 
   // Make an API request to fetch the data
   useEffect(() => {
-    fetch('http://localhost:4000/thingseeSensor/latestdata')
+    fetch('http://13.233.201.118:4000/thingseeSensor/latestdata')
       .then((response) => response.json())
       .then((data) => {
         // Set the fetched data in the state variable
