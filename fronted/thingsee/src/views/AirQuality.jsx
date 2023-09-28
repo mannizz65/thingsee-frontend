@@ -20,7 +20,7 @@ class AirQuality extends PureComponent {
 
   componentDidMount() {
     
-    axios.get('http://13.233.201.118:4000/thingseeSensor/')
+    axios.get('http://localhost:4000/thingseeSensor/')
       .then((response) => {
         const data = response.data.result;
         this.setState({ data });
