@@ -10,8 +10,11 @@ import logo7 from "../../src/assets/log-in.png";
 import logo8 from "../../src/assets/log-out.png";
 import logo9 from "../../src/assets/all.png";
 import logo10 from "../../src/assets/sum.png";
-import logo11 from "../../src/assets/l.png";
-import logo12 from "../../src/assets/ho.png";
+import logo11 from "../../src/assets/t.png";
+import logo12 from "../../src/assets/h.png";
+import logo14 from "../../src/assets/d.png";
+import logo13 from "../../src/assets/storm.png";
+import logo15 from "../../src/assets/c.png";
 
 
 export default function componentName() {
@@ -187,7 +190,7 @@ const formattedDate = `${date}-${month}-${year}`;
         <div class="card-row">
         
            <div class="card">
-          
+           <img src={logo14} alt="Image 2"></img>
            <h3>Feels Like</h3>
           
            <h5>{(weatherData.main.feels_like - 273.15).toFixed(2)}°C</h5>
@@ -198,7 +201,7 @@ const formattedDate = `${date}-${month}-${year}`;
           
           
           <div class="card">
-           
+          <img src={logo11} alt="Image 2"></img>
             <h3>Temperature</h3>
           
             <h5>{(weatherData.main.temp - 273.15).toFixed(2)}°C</h5>
@@ -206,19 +209,19 @@ const formattedDate = `${date}-${month}-${year}`;
           </div>
          
           <div class="card">
-            
+          <img src={logo13} alt="Image 2"></img>
             <h3>Wind Speed</h3>
             <h5>{weatherData.wind.speed}m/s</h5>
           
           </div>
           <div class="card">
-           
+          <img src={logo12} alt="Image 2"></img>
             <h3>Humidity</h3>
             <h5>{weatherData.main.humidity}%</h5>
            
           </div>
           <div class="card">
-           
+          <img src={logo15} alt="Image 2"></img>
            <h3>Weather</h3>
            <h5>{weatherData.weather[0].description}</h5>
           
