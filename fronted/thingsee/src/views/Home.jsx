@@ -21,8 +21,11 @@ export default function componentName() {
 
 
 
-  // Make an API request to fetch the data
-  useEffect(() => {
+// Make an API request to fetch the data and weather data
+useEffect(() => {
+  // Function to fetch data
+  const fetchData = () => {
+    // Fetch data
     fetch('http://13.233.201.118:4000/thingseeSensor/latestdata')
       .then((response) => response.json())
       .then((data) => {
@@ -34,9 +37,7 @@ export default function componentName() {
         console.error('Error fetching data:', error);
       });
 
-      
-
- // Fetch weather data
+    // Fetch weather data
     fetch('https://api.openweathermap.org/data/2.5/weather?lat=65.0124&lon=25.4682&appid=174edfc6e5ad092f016282b294e8dfea')
       .then((response) => response.json())
       .then((data) => {
@@ -47,27 +48,37 @@ export default function componentName() {
       .catch((error) => {
         console.error('Error fetching weather data:', error);
       });
+  };
 
+  // Fetch data initially
+  fetchData();
 
+  // Set up an interval to fetch data every 6 seconds
+  const fetchDataInterval = setInterval(fetchData, 6000);
 
-      const intervalID = setInterval(() => {
-        // Update the time every second
-        setTime(new Date());
-      }, 1000);
-  
-      // Cleanup the interval when the component unmounts
-      return () => clearInterval(intervalID);
+  // Set up an interval to update the time every second
+  const intervalID = setInterval(() => {
+    setTime(new Date());
+  }, 1000);
 
+  // Cleanup the intervals when the component unmounts
+  return () => {
+    clearInterval(fetchDataInterval);
+    clearInterval(intervalID);
+  };
+}, []); // Empty dependency array means this effect runs once when the component mounts
 
-
-
-
-  }, []);  // Empty dependency array means this effect runs once when the component mounts
 
 
   const hours = time.getHours();
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
+  const date = time.getDate(); // Get the day (e.g., 29)
+const month = time.getMonth() + 1; // Get the month (0-indexed, so add 1 to get the correct month)
+const year = time.getFullYear(); // Get the full year (e.g., 2020)
+
+// Create a formatted date string
+const formattedDate = `${date}-${month}-${year}`;
 
   return (
     <>
@@ -87,14 +98,15 @@ export default function componentName() {
           <div class="card">
             <img src={logo2} alt="Image 2"></img>
             <h3>Carbon Dioxide</h3>
-            <h5>{sensorData.carbonDioxide}</h5>
+            <h5>{sensorData.carbonDioxide}ppm</h5>
 
             <Link to="/carbon">View</Link>
           </div>
           <div class="card">
             <img src={logo3} alt="Image 2"></img>
             <h3>Temperature</h3>
-            <h5>{sensorData.temp}</h5>
+            <h5>{sensorData.temp} cel</h5>
+            
             <Link to="/temperature">View</Link>
           </div>
           <div class="card">
@@ -112,7 +124,7 @@ export default function componentName() {
           <div class="card">
             <img src={logo6} alt="Image 2"></img>
             <h3>TVOC Level</h3>
-            <h5>{sensorData.tvoc}</h5>
+            <h5>{sensorData.tvoc}ppb</h5>
             <Link to="/tvoclevel">View</Link>
           </div>
         </div>
@@ -150,7 +162,7 @@ export default function componentName() {
             <h5>{sensorData.totalOut}</h5>
             <Link to="/totalout">View</Link>
           </div>
-          <div class="card">
+          {/* <div class="card">
             <img src={logo11} alt="Image 2"></img>
             <h3>Historical In</h3>
             <h5>{sensorData.historicalIn}</h5>
@@ -161,7 +173,7 @@ export default function componentName() {
             <h3>Historical Out</h3>
             <h5>{sensorData.historicalOut}</h5>
             <Link to="/historicalOut">View</Link>
-          </div>
+          </div> */}
         </div>
         ) : (
           <p>Loading...</p>
@@ -177,7 +189,8 @@ export default function componentName() {
            <div class="card">
           
            <h3>Feels Like</h3>
-           <h5>{weatherData.main.feels_like}</h5>
+          
+           <h5>{(weatherData.main.feels_like - 273.15).toFixed(2)}°C</h5>
 
           
          </div>
@@ -187,20 +200,21 @@ export default function componentName() {
           <div class="card">
            
             <h3>Temperature</h3>
-            <h5>{weatherData.main.temp}</h5>
+          
+            <h5>{(weatherData.main.temp - 273.15).toFixed(2)}°C</h5>
             
           </div>
          
           <div class="card">
             
             <h3>Wind Speed</h3>
-            <h5>{weatherData.wind.speed}</h5>
+            <h5>{weatherData.wind.speed}m/s</h5>
           
           </div>
           <div class="card">
            
             <h3>Humidity</h3>
-            <h5>{weatherData.main.humidity}</h5>
+            <h5>{weatherData.main.humidity}%</h5>
            
           </div>
           <div class="card">
@@ -223,7 +237,9 @@ export default function componentName() {
           {String(minutes).padStart(2, '0')}:
           {String(seconds).padStart(2, '0')}
         </p>
+        <h1>{formattedDate}</h1>
       </div>
+     
     </div>
 
 
