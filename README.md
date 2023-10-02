@@ -68,15 +68,6 @@ The application will start, and you can access it in your web browser at `http:/
 To view your current location. The location will be displayed on the HomePage.
 
 
-## Tech used
-
-**Design and Development Tools:** 
-
-- [(Expressjs)](https://expressjs.com/): Expressjs provides a robust set of features for building the web application.
-- [(Mongoosejs)](https://mongoosejs.com/): Mongoose is an ODM (Object Document Mapper) library for MongoDB and Node.js, simplifying interactions with MongoDB by providing a schema-based solution.
-- [(Momentjs)](https://momentjs.com/): The website relies on React as its primary JavaScript library for constructing the user interface. React is a widely adopted choice for crafting dynamic and engaging web applications.
-- [(Mongodb)](https://www.mongodb.com/): MongoDB is a popular NoSQL database that stores data in flexible, JSON-like BSON (Binary JSON) format.
-
 ## Project Management/Productivity Tools used
 
 **Code Editor:** - [(Visual Studio Code)](https://code.visualstudio.com/)
@@ -84,4 +75,11 @@ To view your current location. The location will be displayed on the HomePage.
 **Project management and tool:**  - [(Trello)](https://trello.com/templates/project-management): Below;
 
 
+## Contributors
+This project was developed by:
+
+Name: Chapal 
+Name: Purity Turunen - [@TurunenP](https://github.com/TurunenP/ElegantShoes.git)
+Name: Divine 
+Name: Manish 
 
