@@ -5,8 +5,7 @@ This is a React.js web application that displays data from a Node.js API, visual
 ## Features
 - **Node.js API Integration**: Fetch machine data from a Node.js API.
 - **Data Visualization**: Display machine data in line and bar charts for  time periods.
-- **Location Data Visialization**: Show the user's current location using geolocation .Data fetch from third party api.
--  
+- **Location Data Visialization**: Show the user's current location using geolocation. Data fetch from third party api.
 
 ## Prerequisites
 
@@ -66,9 +65,23 @@ The application will start, and you can access it in your web browser at `http:/
 
 ## Location
 
-To view your current location,  The location will be displayed on the HomePage.
+To view your current location. The location will be displayed on the HomePage.
 
 
+## Tech used
+
+**Design and Development Tools:** 
+
+- [(Expressjs)](https://expressjs.com/): Expressjs provides a robust set of features for building the web application.
+- [(Mongoosejs)](https://mongoosejs.com/): Mongoose is an ODM (Object Document Mapper) library for MongoDB and Node.js, simplifying interactions with MongoDB by providing a schema-based solution.
+- [(Momentjs)](https://momentjs.com/): The website relies on React as its primary JavaScript library for constructing the user interface. React is a widely adopted choice for crafting dynamic and engaging web applications.
+- [(Mongodb)](https://www.mongodb.com/): MongoDB is a popular NoSQL database that stores data in flexible, JSON-like BSON (Binary JSON) format.
+
+## Project Management/Productivity Tools used
+
+**Code Editor:** - [(Visual Studio Code)](https://code.visualstudio.com/)
+
+**Project management and tool:**  - [(Trello)](https://trello.com/templates/project-management): Below;
 
 
 
