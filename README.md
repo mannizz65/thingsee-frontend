@@ -45,7 +45,6 @@ Before running the application, you need to configure it:
 [- https://github.com/Shaik-Chapal/Thingsee-Monitoring-System.git](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System.git)
 - Follow the README instructions in the Node.js API repository to set it up and make it accessible.
 
-
  
 
 ## Usage
@@ -74,12 +73,11 @@ To view your current location. The location will be displayed on the HomePage.
 
 **Project management and tool:**  - [(Trello)](https://trello.com/templates/project-management): Below;
 
+![trello](https://github.com/Shaik-Chapal/thingsee-frontend/assets/43337898/0444975a-cbc9-44b7-aea7-8da9d29b2e92)
+
 
 ## Contributors
 This project was developed by:
 
-Name: Chapal 
-Name: Purity Turunen - [@TurunenP](https://github.com/TurunenP/ElegantShoes.git)
-Name: Divine 
-Name: Manish 
+Chapal Shaik, Purity Turunen, Divine Kweche Ebechue & Manish Panthi
 
