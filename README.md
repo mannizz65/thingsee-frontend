@@ -67,17 +67,26 @@ The application will start, and you can access it in your web browser at `http:/
 To view your current location. The location will be displayed on the HomePage.
 
 
+
 ## Project Management/Productivity Tools used
 
 **Code Editor:** - [(Visual Studio Code)](https://code.visualstudio.com/)
 
+
 **Project management and tool:**  - [(Trello)](https://trello.com/templates/project-management): Below;
 
+
 ![trello](https://github.com/Shaik-Chapal/thingsee-frontend/assets/43337898/0444975a-cbc9-44b7-aea7-8da9d29b2e92)
+
 
 
 ## Contributors
 This project was developed by:
 
-Chapal Shaik, Purity Turunen, Divine Kweche Ebechue & Manish Panthi
+Purity Turunen - [@TurunenP]( TurunenP/Thingsee-Monitoring-System (github.com) )
+Shaik-Chapal - [@Shaik-Chapal](Shaik-Chapal/Thingsee-Monitoring-System (github.com)
+Divine Kweche Ebechue - [@Kweche-Ebechue-Divine ]( Shaik-Chapal/Thingsee-Monitoring-System (github.com))
+Manish Panthi - [@Manish Panthi]( Shaik-Chapal/Thingsee-Monitoring-System (github.com))
+
+
 
