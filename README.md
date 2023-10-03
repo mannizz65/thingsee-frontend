@@ -23,7 +23,7 @@ Before running the application, make sure you have the following installed:
 
 2. Navigate to the project directory:
 
-cd fronted
+cd frontend
  then
  cd thingsee
 
@@ -82,6 +82,8 @@ To view your current location. The location will be displayed on the HomePage.
 
 ## Contributors
 This project was developed by:
+
+- Shaik Chapal - [@Shaik-Chapal](https://github.com/ Shaik-Chapal/thingsee-frontend.git)
 
 - Shaik-Chapal: [@Shaik-Chapal](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System)
 - Divine Kweche Ebechue - [@Kweche-Ebechue-Divine](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System)
