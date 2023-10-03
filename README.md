@@ -88,6 +88,3 @@ This project was developed by:
 - Manish Panthi - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
 - Purity Turunen - [@TurunenP](https://github.com/TurunenP/Thingsee-Monitoring-System.git)
 
-- Name: Purity Turunen - [@TurunenP](https://github.com/TurunenP/Thingsee-Monitoring-System.git)
-
-
