@@ -83,7 +83,7 @@ To view your current location. The location will be displayed on the HomePage.
 ## Contributors
 This project was developed by:
 
-- Shaik Chapal - [@Shaik-Chapal](https://github.com/ Shaik-Chapal/thingsee-frontend.git)
+- Shaik Chapal - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
 
 - Shaik-Chapal: [@Shaik-Chapal](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System)
 - Divine Kweche Ebechue - [@Kweche-Ebechue-Divine](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System)
