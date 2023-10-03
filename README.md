@@ -84,9 +84,10 @@ To view your current location. The location will be displayed on the HomePage.
 This project was developed by:
 
 - Shaik Chapal - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
+- Divine Kweche Ebechue - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
+- Manish Panthi - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
+- Purity Turunen - [@TurunenP](https://github.com/TurunenP/Thingsee-Monitoring-System.git)
 
-- Shaik-Chapal: [@Shaik-Chapal](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System)
-- Divine Kweche Ebechue - [@Kweche-Ebechue-Divine](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System)
-- Manish Panthi - [@Manish Panthi](https://github.com/Shaik-Chapal/Thingsee-Monitoring-System)
-- Purity Turunen - [@TurunenP](https://github.com/TurunenP/Thingsee-Monitoring-System)
+- Name: Purity Turunen - [@TurunenP](https://github.com/TurunenP/Thingsee-Monitoring-System.git)
+
 
