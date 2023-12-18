@@ -90,6 +90,6 @@ This project was developed by:
 
 - Shaik Chapal - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
 - Divine Kweche Ebechue - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
-- Manish Panthi - [@Shaik-Chapal](https://github.com/Shaik-Chapal/thingsee-frontend.git)
+- Manish Panthi - [@Manish Panthi](https://github.com/Shaik-Chapal/thingsee-frontend.git)
 - Purity Turunen - [@TurunenP](https://github.com/TurunenP/Thingsee-Monitoring-System.git)
 
